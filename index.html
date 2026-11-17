@@ -43,7 +43,7 @@
 
             try {
                 // Сюда мы потом вставим ссылку на наш сервер
-                const response = await fetch('/chat', {
+                const ответ = await получить('https://my-ai-cat.onrender.com/chat', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ message: message })
