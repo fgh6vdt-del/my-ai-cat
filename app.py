@@ -1,4 +1,10 @@
 from flask import Flask, render_template, request, jsonify
+from flask_cors import CORS  # <-- Добавь эту строку
+import requests
+
+app = Flask(__name__)
+CORS(app)  # <-- И вот эту строку
+from flask import Flask, render_template, request, jsonify
 import requests
 import os
 
